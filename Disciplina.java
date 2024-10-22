@@ -1,17 +1,7 @@
 public class Disciplina {
     private String nome;
-    private String aluno;
-    private String professor;
-
-    public Disciplina() {
-
-    }
-
-    public Disciplina(String nome, Aluno aluno, Professor professor) {
-        this.nome = nome;
-        this.aluno = String.valueOf(aluno);
-        this.professor = String.valueOf(professor);
-    }
+    private Aluno aluno;
+    private Professor professor;
 
     public String getNome() {
         return nome;
@@ -21,27 +11,27 @@ public class Disciplina {
         this.nome = nome;
     }
 
-    public String getAluno() {
+    public Aluno getAluno() {
         return aluno;
     }
 
-    public void setAluno(String aluno) {
+    public void setAluno(Aluno aluno) {
         this.aluno = aluno;
     }
 
-    public String getProfessor() {
+    public Professor getProfessor() {
         return professor;
     }
 
-    public void setProfessor(String professor) {
+    public void setProfessor(Professor professor) {
         this.professor = professor;
     }
 
     public void cadastrarAluno(Aluno aluno) {
-        this.aluno = String.valueOf(aluno);
+        this.aluno = aluno;
     }
 
     public void ministrarDisciplina(Professor professor) {
-        this.professor = String.valueOf(professor);
+        this.professor = professor;
     }
 }

@@ -37,12 +37,6 @@ public class Main {
         System.out.println("Digite o nome da disciplina: ");
         d.setNome(sc.next());
 
-        System.out.println("Digite o nome do aluno a estudar a disciplina: ");
-        d.setAluno(sc.next());
-
-        System.out.println("Digite o nome do professor da disciplina: ");
-        d.setProfessor(sc.next());
-
         d.cadastrarAluno(aluno);
         d.ministrarDisciplina(professor);
 
