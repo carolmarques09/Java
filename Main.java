@@ -7,6 +7,9 @@ public class Main {
         Professor p = new Professor();
         Disciplina d = new Disciplina();
 
+        Aluno aluno = new Aluno();
+        Professor professor = new Professor();
+
         // Cadastro do professor
 
         System.out.println("Digite seu nome completo: ");
@@ -40,7 +43,8 @@ public class Main {
         System.out.println("Digite o nome do professor da disciplina: ");
         d.setProfessor(sc.next());
 
-        System.out.println();
+        d.cadastrarAluno(aluno);
+        d.ministrarDisciplina(professor);
 
         // exibição pelo toString
 
@@ -50,7 +54,7 @@ public class Main {
         System.out.println("Informações do Aluno:");
         System.out.println(a);
 
-        System.out.println("Informações da disciplina: ");
+        System.out.println("\nInformações da disciplina: ");
         System.out.println(d);
     }
 }
