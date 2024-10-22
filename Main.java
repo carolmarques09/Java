@@ -3,36 +3,54 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Calculadora c = new Calculadora();
-        int r;
-        do {
-            System.out.println("Aperte 1: soma, Aperte 2: subtração, Aperte 3, multiplicação, Aperte 4: divisão");
+        Aluno a = new Aluno();
+        Professor p = new Professor();
+        Disciplina d = new Disciplina();
 
-            System.out.println("Informe o primeiro número: ");
-            double n1 = sc.nextDouble();
+        // Cadastro do professor
 
-            System.out.println("Informe o segundo número: ");
-            double n2 = sc.nextDouble();
+        System.out.println("Digite seu nome completo: ");
+        p.setNome(sc.next());
 
-            int x = sc.nextInt();
-            switch (x) {
-                case 1:
-                    c.soma();
-                    break;
-                case 2:
-                    c.subtracao();
-                    break;
-                case 3:
-                    c.multiplicacao();
-                    break;
-                case 4:
-                    c.divisao();
-                    break;
-                default:
-                    System.out.println("Opção inválida, tente novamente!");
-            }
-            System.out.println("Para ver novamente, digite 0");
-            r = sc.nextInt();
-        } while (r == 0);
+        System.out.println("Digite sua idade: ");
+        p.setIdade(sc.nextInt());
+
+        System.out.println("Digite sua matrícula: ");
+        p.setMatricula(sc.nextDouble());
+
+        // Cadastro do aluno
+
+        System.out.println("Digite seu nome completo: ");
+        a.setNome(sc.next());
+
+        System.out.println("Digite sua idade: ");
+        a.setIdade(sc.nextInt());
+
+        System.out.println("Digite sua matrícula: ");
+        a.setMatricula(sc.nextDouble());
+
+        // Cadastro da disciplina
+
+        System.out.println("Digite o nome da disciplina: ");
+        d.setNome(sc.next());
+
+        System.out.println("Digite o nome do aluno a estudar a disciplina: ");
+        d.setAluno(sc.next());
+
+        System.out.println("Digite o nome do professor da disciplina: ");
+        d.setProfessor(sc.next());
+
+        System.out.println();
+
+        // exibição pelo toString
+
+        System.out.println("Informações do Professor:");
+        System.out.println(p);
+
+        System.out.println("Informações do Aluno:");
+        System.out.println(a);
+
+        System.out.println("Informações da disciplina: ");
+        System.out.println(d);
     }
 }
