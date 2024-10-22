@@ -44,6 +44,11 @@ public class Aluno extends Pessoa {
         return matricula;
     }
 
+    @Override
+    public void emitirSom() {
+
+    }
+
     public void setMatricula(int matricula) {
         this.matricula = matricula;
     }

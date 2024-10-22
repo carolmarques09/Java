@@ -1,4 +1,4 @@
-public class Pessoa {
+public abstract class Pessoa {
     protected String nome;
     protected int idade;
     protected double matricula;
@@ -36,4 +36,7 @@ public class Pessoa {
     public void setMatricula(double matricula) {
         this.matricula = matricula;
     }
+
+    public abstract void emitirSom();
+
 }
