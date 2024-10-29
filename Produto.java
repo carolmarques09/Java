@@ -52,14 +52,16 @@ public class Produto {
         return preco * 0.100;
     }
 
-    public void calcularPrecoFinal() {
+    public double calcularDesconto() {
+        return preco - 10;
+    }
 
+    public double calcularPrecoFinal() {
+        return (preco + calcularLucro() + calcularJuros() + calcularDesconto());
     }
 
     public double calcularTotal() {
-        return
+        return quantidade * preco;
     }
-
-
 
 }
