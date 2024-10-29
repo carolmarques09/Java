@@ -14,9 +14,11 @@ public class Main {
         notaFiscal.adicionaProduto2(produto2);
         notaFiscal.adicionaProduto3(produto3);
 
-        System.out.println("Digite o nome do cliente: ");
+        produto1.calcularPrecoFinal();
+        produto2.calcularPrecoFinal();
+        produto3.calcularPrecoFinal();
 
-        System.out.println("Digite o nome do produto: ");
+        notaFiscal.emitirNota();
 
     }
 }
