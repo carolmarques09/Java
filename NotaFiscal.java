@@ -38,9 +38,12 @@ public class NotaFiscal {
             System.out.println("Categoria: ");
             System.out.println("---------------------------");
             System.out.println("Imposto: " + produto1.calcularImposto());
+            System.out.println("Imposto: " + produto2.calcularImposto());
+            System.out.println("Imposto: " + produto3.calcularImposto());
+
             System.out.println("Juros: " + produto1.calcularJuros());
             System.out.println("Lucro: " + produto1.calcularLucro());
             System.out.println("Taxa de manuseio: " + produto1.calcularTaxaManuseio());
-            System.out.println("Valor Total da Nota: ");
+            System.out.println("Valor Total da Nota: " + produto1.calcularTotal());
         }
 }
